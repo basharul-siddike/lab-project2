@@ -5,14 +5,14 @@
   vars:
      ansible_python_interpreter: /home/ubuntu/k8s-ansible-venv/bin/python
      docker_tag: "latest"  # Change this to any tag you want
-     container_name: "abctechnologies-ansible"
-     image_name: "basharulsiddike/abctechnologies-ansible"
+     container_name: "xyztechnologies-ansible"
+     image_name: "basharulsiddike/xyztechnologies-ansible"
      docker_username: "{{ lookup('env', 'DOCKER_USERNAME') }}"
      docker_password: "{{ lookup('env', 'DOCKER_PASSWORD') }}"
      kubeconfig_path: "{{ lookup('env', 'KUBECONFIG_PATH') }}"
      deployment_file: './k8s_deployments/deployment.yml'
      service_file: './k8s_deployments/service.yaml'
-     namespace: "xyz-technologies-ansible" # Add your desired namespace here
+     namespace: "xyz-technologies" # Add your desired namespace here
      docker_host: "unix:///var/run/docker.sock"
   tasks:
      - name: Debug kubeconfig path
