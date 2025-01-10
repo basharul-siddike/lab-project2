@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         DOCKER_CREDENTIALS_ID = 'dockerhub' // Jenkins ID for DockerHub credentials
-        DOCKER_IMAGE = 'mahshamim/xyz-technologies'
+        DOCKER_IMAGE = 'basharulsiddike/xyz-technologies'
         DOCKER_REGISTRY = 'https://index.docker.io/v1/' // For DockerHub
         CONTAINER_NAME = "xyz-technologies"
         DOCKER_TAG = "${BUILD_ID}"  // Use the BUILD_ID as the tag
@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Code Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/mah-shamim/industry-grade-project-ii.git'
+                git branch: 'master', url: 'https://github.com/basharul-siddike/lab-project2.git'
             }
         }
 
