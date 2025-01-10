@@ -12,7 +12,7 @@
      kubeconfig_path: "{{ lookup('env', 'KUBECONFIG_PATH') }}"
      deployment_file: './k8s_deployments/deployment.yml'
      service_file: './k8s_deployments/service.yaml'
-     namespace: "abc-technologies-ansible" # Add your desired namespace here
+     namespace: "xyz-technologies-ansible" # Add your desired namespace here
      docker_host: "unix:///var/run/docker.sock"
   tasks:
      - name: Debug kubeconfig path
