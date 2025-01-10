@@ -1,0 +1,7 @@
+git init
+git add .
+git commit -m "lab-project-01"
+git remote add origin https://github.com/basharul-siddike/lab-project1.git
+git push origin master
+ls
+

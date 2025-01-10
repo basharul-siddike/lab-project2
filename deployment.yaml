@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: labproject01-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: labproject01
+  template:
+    metadata:
+      labels:
+        app: labproject01
+    spec:
+      containers:
+        - name: labproject01
+          image: basharulsiddike/labproject01:latest
+          ports:
+            - containerPort: 8080
